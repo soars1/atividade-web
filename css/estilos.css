@@ -275,3 +275,10 @@ label {
     padding: 14px 0;
   }
 }
+
+/* Respeita quem prefere navegar sem animações de rolagem. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
