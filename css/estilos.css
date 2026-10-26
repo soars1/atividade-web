@@ -4,6 +4,8 @@
   --texto-suave: #514c43;
   --linha: #d5d0c5;
   --destaque: #006783;
+  --fonte-corpo: "Source Sans 3", Arial, sans-serif;
+  --fonte-titulo: Georgia, "Times New Roman", serif;
 }
 
 /* O JavaScript troca o tema usando este atributo. */
@@ -13,6 +15,16 @@ html[data-tema="oliva"] {
 
 html[data-tema="ocre"] {
   --destaque: #a87920;
+}
+
+html[data-fonte="serifada"] {
+  --fonte-corpo: Georgia, "Times New Roman", serif;
+  --fonte-titulo: Georgia, "Times New Roman", serif;
+}
+
+html[data-fonte="sem-serifa"] {
+  --fonte-corpo: "Source Sans 3", Arial, sans-serif;
+  --fonte-titulo: "Source Sans 3", Arial, sans-serif;
 }
 
 * {
@@ -27,7 +39,7 @@ body {
   margin: 0;
   background: var(--fundo);
   color: var(--texto-suave);
-  font-family: "Source Sans 3", Arial, sans-serif;
+  font-family: var(--fonte-corpo);
   font-size: 17px;
   line-height: 1.6;
 }
@@ -50,7 +62,7 @@ a:hover {
 h1,
 h2 {
   color: var(--texto);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--fonte-titulo);
   font-weight: 400;
   letter-spacing: -0.04em;
 }
@@ -92,7 +104,7 @@ label {
 
 .logo {
   color: var(--texto);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--fonte-titulo);
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;

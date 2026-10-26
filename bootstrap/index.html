@@ -17,7 +17,7 @@
       <nav aria-label="Navegação principal">
         <a href="#projeto">O projeto</a>
         <a href="#servicos">Serviços</a>
-        <a href="#preferencias">Cores</a>
+        <a href="#preferencias">Personalizar</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
@@ -47,8 +47,8 @@
     </section>
 
     <section class="content-section" id="preferencias">
-      <h2>Escolha uma cor</h2>
-      <p>Troque a cor do site. A escolha fica salva neste navegador.</p>
+      <h2>Personalize o site</h2>
+      <p>Escolha as cores e as fontes. As mudanças ficam salvas neste navegador.</p>
       <label for="paleta">Cor do site</label>
       <select id="paleta" class="form-select preference-select">
         <option value="petroleo">Azul-petróleo</option>
@@ -56,6 +56,13 @@
         <option value="ocre">Ocre</option>
       </select>
       <p id="estado-preferencia" class="status-message mensagem-destaque" role="status" aria-live="polite"></p>
+      <label for="fonte">Fonte do site</label>
+      <select id="fonte" class="form-select preference-select">
+        <option value="mista">Texto Source Sans 3 e títulos Georgia</option>
+        <option value="serifada">Georgia</option>
+        <option value="sem-serifa">Source Sans 3</option>
+      </select>
+      <p id="estado-fonte" class="status-message mensagem-destaque" role="status" aria-live="polite"></p>
     </section>
 
     <section class="content-section" id="contato">
