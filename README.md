@@ -1,32 +1,12 @@
 # TechPoint
 
-Trabalho de faculdade para comparar Bootstrap e Materialize CSS usando duas versões do mesmo site.
+Trabalho da faculdade comparando Bootstrap e Materialize.
 
-A TechPoint é uma assistência técnica fictícia. Nas duas versões, a estrutura e o conteúdo são parecidos, mas cada página utiliza um framework diferente.
+Criei o mesmo site de assistência técnica fictícia nas duas versões. Dá para trocar a cor e a fonte; as escolhas ficam guardadas no `localStorage` mesmo depois de fechar o navegador.
 
-## Ver as páginas
+- [Bootstrap](https://soars1.github.io/atividade-web/bootstrap/)
+- [Materialize](https://soars1.github.io/atividade-web/materialize/)
 
-- [Versão Bootstrap](https://soars1.github.io/atividade-web/bootstrap/)
-- [Versão Materialize](https://soars1.github.io/atividade-web/materialize/)
+O formulário é só para demonstração, não envia mensagens.
 
-## O que tem no projeto
-
-- Seções de apresentação, serviços e contato;
-- Troca de paleta de cores e de fontes;
-- Preferências salvas no navegador usando `localStorage`;
-- Formulário demonstrativo (não envia mensagens).
-
-## Tecnologias
-
-HTML, CSS, JavaScript, Bootstrap e Materialize.
-
-## Como rodar
-
-Basta baixar o projeto e abrir `bootstrap/index.html` ou `materialize/index.html` no navegador. Os frameworks e as fontes são carregados por CDN, então precisam de conexão com a internet.
-
-## Organização
-
-- `bootstrap/` — primeira versão;
-- `materialize/` — segunda versão;
-- `css/` — estilos compartilhados;
-- `js/` — preferências e comportamento do formulário.
+Para testar no PC, abra `bootstrap/index.html` ou `materialize/index.html`. Precisa de internet para carregar os frameworks por CDN.
