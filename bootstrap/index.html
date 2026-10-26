@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechPoint - Bootstrap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#inicio">TechPoint</a>
+      <nav aria-label="Navegação principal">
+        <a href="#projeto">O projeto</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#preferencias">Cores</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro" id="inicio">
+      <p class="eyebrow">Meu trabalho de aula · Bootstrap</p>
+      <h1>Estou aprendendo a criar páginas para a web.</h1>
+      <p>Inventei a TechPoint, uma assistência técnica, e fiz duas versões do site: uma com Bootstrap e outra com Materialize.</p>
+      <a class="text-link" href="#projeto">Ver o que eu fiz ↓</a>
+    </section>
+
+    <section class="content-section" id="projeto">
+      <h2>O que eu fiz</h2>
+      <p>Dividi a página em partes: apresentação, serviços, escolha de cor e contato. Para montar tudo, usei HTML, CSS, JavaScript e Bootstrap.</p>
+      <p>Também fiz o mesmo site com Materialize para comparar os dois. <a href="../materialize/">Ver minha versão com Materialize</a>.</p>
+    </section>
+
+    <section class="content-section" id="servicos">
+      <h2>O que a TechPoint faz</h2>
+      <ul class="service-list">
+        <li>Conserto e limpeza de computadores.</li>
+        <li>Montagem de computadores para diferentes usos.</li>
+        <li>Ajuda com programas e outros problemas técnicos.</li>
+      </ul>
+    </section>
+
+    <section class="content-section" id="preferencias">
+      <h2>Escolha uma cor</h2>
+      <p>Troque a cor do site. A escolha fica salva neste navegador.</p>
+      <label for="paleta">Cor do site</label>
+      <select id="paleta" class="form-select preference-select">
+        <option value="petroleo">Azul-petróleo</option>
+        <option value="oliva">Verde-oliva</option>
+        <option value="ocre">Ocre</option>
+      </select>
+      <p id="estado-preferencia" class="status-message mensagem-destaque" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="content-section" id="contato">
+      <h2>Contato</h2>
+      <p>Fiz este formulário para mostrar como ele funciona. Ele não envia mensagens.</p>
+      <form id="form-contato" class="contact-form">
+        <label for="nome">Seu nome</label>
+        <input class="form-control" id="nome" name="nome" autocomplete="name" required>
+
+        <label for="email">Seu e-mail</label>
+        <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="mensagem">O que você quer dizer?</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
+
+        <button class="simple-button" type="submit">Testar o formulário</button>
+        <p id="resposta-formulario" class="status-message mensagem-destaque" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>Trabalho de aula feito para praticar HTML, CSS e JavaScript.</span>
+      <a href="../materialize/">Abrir versão Materialize</a>
+    </div>
+  </footer>
+  <script src="../js/preferencias.js"></script>
+</body>
+</html>

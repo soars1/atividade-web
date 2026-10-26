@@ -1,0 +1,265 @@
+:root {
+  --fundo: #f3f0e8;
+  --texto: #171713;
+  --texto-suave: #514c43;
+  --linha: #d5d0c5;
+  --destaque: #006783;
+}
+
+/* O JavaScript troca o tema usando este atributo. */
+html[data-tema="oliva"] {
+  --destaque: #69765e;
+}
+
+html[data-tema="ocre"] {
+  --destaque: #a87920;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto-suave);
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: var(--destaque);
+}
+
+a:hover {
+  color: var(--destaque);
+}
+
+h1,
+h2 {
+  color: var(--texto);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0 0 22px;
+  font-size: clamp(44px, 7vw, 72px);
+  line-height: 1.04;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: clamp(32px, 4vw, 42px);
+}
+
+p {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  color: var(--texto);
+  font-weight: 700;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--linha);
+}
+
+.header-content {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--texto);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  box-shadow: none;
+  line-height: normal;
+}
+
+.site-header nav a {
+  padding: 0;
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header nav a:hover {
+  color: var(--destaque);
+}
+
+.intro {
+  padding: 75px 0 65px;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  color: var(--destaque);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.intro > p:not(.eyebrow) {
+  max-width: 610px;
+  margin-bottom: 18px;
+}
+
+.text-link {
+  font-weight: 700;
+}
+
+.content-section {
+  padding: 42px 0;
+  border-top: 1px solid var(--linha);
+}
+
+.service-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.service-list li {
+  margin: 7px 0;
+}
+
+.preference-select {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: 42px;
+  padding: 0 10px;
+  border: 1px solid #aaa396;
+  border-radius: 0;
+  background: transparent;
+  color: var(--texto);
+  font: inherit;
+}
+
+.contact-form {
+  max-width: 520px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 8px;
+  border: 1px solid #aaa396;
+  border-radius: 0;
+  background: transparent;
+  color: var(--texto);
+  font: inherit;
+  box-shadow: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.simple-button {
+  padding: 8px 12px;
+  border: 1px solid var(--destaque);
+  background: transparent;
+  color: var(--destaque);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.simple-button:hover {
+  background: var(--destaque);
+  color: white;
+}
+
+/* Use em mensagens que acompanham a cor escolhida. */
+.mensagem-destaque,
+.status-message {
+  color: var(--destaque);
+}
+
+.status-message {
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.site-footer {
+  margin-top: 20px;
+  border-top: 1px solid var(--linha);
+}
+
+.footer-content {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .site-header nav {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .intro {
+    padding: 54px 0 48px;
+  }
+
+  .content-section {
+    padding: 32px 0;
+  }
+
+  .footer-content {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0;
+  }
+}
