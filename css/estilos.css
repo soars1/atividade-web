@@ -158,13 +158,8 @@ label {
   border-top: 1px solid var(--linha);
 }
 
-.service-list {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.service-list li {
-  margin: 7px 0;
+.service-grid .card {
+  height: 100%;
 }
 
 .preference-select {
@@ -202,18 +197,17 @@ label {
   resize: vertical;
 }
 
-.simple-button {
-  padding: 8px 12px;
-  border: 1px solid var(--destaque);
-  background: transparent;
-  color: var(--destaque);
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
+.btn.btn-primary,
+.btn.waves-effect {
+  border-color: var(--destaque);
+  background-color: var(--destaque);
+  color: white;
 }
 
-.simple-button:hover {
-  background: var(--destaque);
+.btn.btn-primary:hover,
+.btn.waves-effect:hover {
+  border-color: var(--texto);
+  background-color: var(--texto);
   color: white;
 }
 
