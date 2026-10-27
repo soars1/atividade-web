@@ -79,6 +79,20 @@ h2 {
   font-size: clamp(32px, 4vw, 42px);
 }
 
+.versao-bootstrap h1,
+.versao-bootstrap h2 {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.versao-bootstrap h1 {
+  font-size: clamp(36px, 5vw, 56px);
+}
+
+.versao-bootstrap h2 {
+  font-size: clamp(28px, 3vw, 34px);
+}
+
 p {
   margin-top: 0;
 }
@@ -96,6 +110,10 @@ label {
   z-index: 10;
   border-bottom: 1px solid var(--linha);
   background: var(--fundo);
+}
+
+.versao-materialize .site-header {
+  border-bottom: 0;
 }
 
 .header-content {
@@ -142,6 +160,10 @@ label {
   scroll-margin-top: 110px;
 }
 
+.versao-bootstrap .intro {
+  padding: 48px 0;
+}
+
 .eyebrow {
   margin-bottom: 18px;
   color: var(--destaque);
@@ -164,6 +186,10 @@ label {
   scroll-margin-top: 110px;
 }
 
+.versao-bootstrap .content-section {
+  padding: 28px 0;
+}
+
 .service-grid .card {
   height: 100%;
 }
@@ -173,12 +199,6 @@ label {
   width: 100%;
   max-width: 350px;
   height: 42px;
-  padding: 0 10px;
-  border: 1px solid #aaa396;
-  border-radius: 0;
-  background: transparent;
-  color: var(--texto);
-  font: inherit;
 }
 
 .contact-form {
@@ -190,31 +210,23 @@ label {
   display: block;
   width: 100%;
   margin-bottom: 14px;
-  padding: 8px;
-  border: 1px solid #aaa396;
-  border-radius: 0;
-  background: transparent;
-  color: var(--texto);
-  font: inherit;
-  box-shadow: none;
 }
 
-.contact-form textarea {
-  resize: vertical;
+.versao-bootstrap .btn-primary {
+  --bs-btn-bg: var(--destaque);
+  --bs-btn-border-color: var(--destaque);
+  --bs-btn-hover-bg: var(--destaque);
+  --bs-btn-hover-border-color: var(--destaque);
+  --bs-btn-active-bg: var(--destaque);
+  --bs-btn-active-border-color: var(--destaque);
 }
 
-.btn.btn-primary,
-.btn.waves-effect {
-  border-color: var(--destaque);
+.versao-materialize .btn.waves-effect {
   background-color: var(--destaque);
-  color: white;
 }
 
-.btn.btn-primary:hover,
-.btn.waves-effect:hover {
-  border-color: var(--texto);
+.versao-materialize .btn.waves-effect:hover {
   background-color: var(--texto);
-  color: white;
 }
 
 /* Use em mensagens que acompanham a cor escolhida. */
@@ -264,8 +276,16 @@ label {
     padding: 54px 0 48px;
   }
 
+  .versao-bootstrap .intro {
+    padding: 40px 0;
+  }
+
   .content-section {
     padding: 32px 0;
+  }
+
+  .versao-bootstrap .content-section {
+    padding: 24px 0;
   }
 
   .footer-content {
