@@ -8,19 +8,21 @@
   --fonte-titulo: Georgia, "Times New Roman", serif;
 }
 
+/* O JavaScript muda estas opções quando a pessoa troca as preferências. */
 html[data-tema="oliva"] { --destaque: #69765e; }
 html[data-tema="ocre"] { --destaque: #a87920; }
+
 html[data-fonte="serifada"] {
   --fonte-corpo: Georgia, "Times New Roman", serif;
   --fonte-titulo: Georgia, "Times New Roman", serif;
 }
+
 html[data-fonte="sem-serifa"] {
   --fonte-corpo: "Source Sans 3", Arial, sans-serif;
   --fonte-titulo: "Source Sans 3", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -63,6 +65,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0;
 }
+
 .versao-bootstrap h1 { font-size: clamp(36px, 5vw, 56px); }
 .versao-bootstrap h2 { font-size: clamp(28px, 3vw, 34px); }
 
@@ -84,13 +87,19 @@ label {
 }
 .versao-materialize .site-header { border: 0; }
 
-.header-content, .footer-content {
+.header-content,
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-content { min-height: 68px; gap: 20px; }
-.logo { font-size: 20px; font-weight: 700; text-decoration: none; }
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
 
 .site-header nav {
   display: flex;
@@ -128,6 +137,7 @@ label {
   border-top: 1px solid var(--linha);
 }
 .versao-bootstrap .content-section { padding: 28px 0; }
+
 .service-grid .card { height: 100%; }
 
 .preference-select {
@@ -137,22 +147,34 @@ label {
   height: 42px;
 }
 .contact-form { max-width: 520px; }
+
 .versao-bootstrap .btn-primary {
-  --bs-btn-bg: var(--destaque);
-  --bs-btn-border-color: var(--destaque);
-  --bs-btn-hover-bg: var(--destaque);
-  --bs-btn-hover-border-color: var(--destaque);
-  --bs-btn-active-bg: var(--destaque);
-  --bs-btn-active-border-color: var(--destaque);
+  background: var(--destaque);
+  border-color: var(--destaque);
 }
-.versao-materialize .btn.waves-effect,
-.versao-materialize .btn.waves-effect:hover { background: var(--destaque); }
+
+.versao-bootstrap .btn-primary:hover, .versao-materialize .btn.waves-effect:hover {
+  background: var(--texto);
+  border-color: var(--texto);
+}
+
+.versao-materialize .btn.waves-effect { background: var(--destaque); }
 
 .mensagem-destaque, .status-message { color: var(--destaque); }
-.status-message { min-height: 1.4em; margin: 8px 0 0; font-size: 14px; }
+
+.status-message {
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
 
 .site-footer { margin-top: 20px; border-top: 1px solid var(--linha); }
-.footer-content { min-height: 64px; gap: 12px; font-size: 13px; }
+
+.footer-content {
+  min-height: 64px;
+  gap: 12px;
+  font-size: 13px;
+}
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
