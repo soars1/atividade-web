@@ -91,7 +91,11 @@ label {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   border-bottom: 1px solid var(--linha);
+  background: var(--fundo);
 }
 
 .header-content {
@@ -135,6 +139,7 @@ label {
 
 .intro {
   padding: 75px 0 65px;
+  scroll-margin-top: 110px;
 }
 
 .eyebrow {
@@ -156,6 +161,7 @@ label {
 .content-section {
   padding: 42px 0;
   border-top: 1px solid var(--linha);
+  scroll-margin-top: 110px;
 }
 
 .service-grid .card {
